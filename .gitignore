@@ -17,3 +17,4 @@ assets/img/demo_mine_workshop_realtime_bg.png
 # OS
 .DS_Store
 Thumbs.db
+.vercel
