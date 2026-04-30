@@ -7,7 +7,7 @@ const fsBtn = document.getElementById("fsBtn");
 const langToggle = document.getElementById("langToggle");
 
 let active = 0;
-let lang = "en";
+let lang = "es";
 
 const i18n = {
   en: {
