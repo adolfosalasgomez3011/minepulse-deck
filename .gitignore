@@ -1,0 +1,19 @@
+# Old draft images (not used in current deck)
+assets/img/CoverSlde_Img/
+assets/img/component_dashboard_v10.png
+assets/img/component_dashboard_v11.png
+assets/img/component_dashboard_v12.png
+assets/img/hero_value_promise_raw.png
+assets/img/network_solution_mining_raw.png
+assets/img/network_solution_mining_visual.png
+assets/img/value_pillars_graphic_raw.png
+assets/img/value_pillars_graphic_visual.png
+assets/img/roadmap_90day_graphic_raw.png
+assets/img/roadmap_90day_graphic_visual.png
+assets/img/crusher_smelt_raw_v1.png
+assets/img/crusher_smelt_raw_v2.png
+assets/img/demo_mine_workshop_realtime_bg.png
+
+# OS
+.DS_Store
+Thumbs.db

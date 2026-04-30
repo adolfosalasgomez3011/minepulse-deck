@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoalPraxis - MinePulse Launch Deck</title>
+  <meta name="description" content="GoalPraxis - MinePulse launch presentation for mining asset visibility and operational intelligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="radar radar-a"></div>
+  <div class="radar radar-b"></div>
+
+  <header class="topbar">
+    <div class="brand-group">
+      <img class="gp-logo" src="assets/img/gp_logo_banner.png" alt="GoalPraxis" />
+      <span class="sep"></span>
+      <span class="minepulse">Mine<span>Pulse</span></span>
+      <span class="joint-tag" data-i18n="header.tag">Launch Narrative Deck</span>
+    </div>
+    <div class="controls">
+      <button id="langToggle" class="control-btn lang-btn" aria-label="Toggle language">
+        <span class="lang-flag">🇬🇧</span>
+        <span class="lang-label" data-i18n="header.lang">ENGLISH</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-flag">🇵🇪</span>
+        <span class="lang-label" data-i18n="header.lang2">ESPAÑOL</span>
+      </button>
+      <button id="fsBtn" class="control-btn accent" aria-label="Toggle full screen" data-i18n="header.fs">Fullscreen</button>
+    </div>
+  </header>
+
+  <div class="progress-wrap"><div id="progressBar"></div></div>
+
+  <div class="slide-nav" aria-label="Slide navigation">
+    <button id="prevBtn" class="slide-nav-btn" aria-label="Previous slide">&#9650;</button>
+    <button id="nextBtn" class="slide-nav-btn" aria-label="Next slide">&#9660;</button>
+  </div>
+
+  <main id="deck" class="deck" aria-live="polite">
+    <section class="slide hero active" id="slide-1">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="content hero-layout">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Client Value Driven</p>
+          <h1 data-i18n="hero.title">Operational Visibility. Measurable Performance.</h1>
+          <p class="lead" data-i18n="hero.subtitle">
+            GoalPraxis - MinePulse helps mining leaders convert field activity into faster decisions, stronger control, and quantifiable operational gains.
+          </p>
+        </div>
+
+        <figure class="hero-process-figure">
+          <img src="assets/img/component_dashboard_v13.png" alt="MinePulse process flow" />
+        </figure>
+      </div>
+      <div class="hero-bottom">
+        <p class="subtle" data-i18n="hero.powered">Powered by Tektelic infrastructure</p>
+        <div class="chip-row">
+          <span class="chip chip-locate" data-i18n="pillars.locate">Locate</span>
+          <span class="chip chip-optimize" data-i18n="pillars.optimize">Optimize</span>
+          <span class="chip chip-protect" data-i18n="pillars.protect">Protect</span>
+        </div>
+      </div>
+      <div class="slide-index">01</div>
+    </section>
+
+    <section class="slide" id="slide-2">
+      <div class="content">
+        <p class="eyebrow" data-i18n="impact.eyebrow">What MinePulse delivers</p>
+        <h2 data-i18n="impact.title">Three capabilities. Immediate operational impact.</h2>
+        <div class="impact-grid">
+
+          <!-- LOCATE -->
+          <article class="impact-card impact-locate">
+            <div class="impact-img-wrap">
+              <img src="assets/img/icon_locate_beacon.png" alt="Mine site beacon tower" class="impact-img" />
+              <div class="impact-img-overlay locate"></div>
+            </div>
+            <h3 data-i18n="impact.locate.h">Know where everything is — always</h3>
+            <p class="impact-stat" data-i18n="impact.locate.stat">Up to 40% less time searching for assets</p>
+            <ul>
+              <li data-i18n="impact.locate.l1">Live map for assets &amp; personnel</li>
+              <li data-i18n="impact.locate.l2">Zone &amp; geofence instant alerts</li>
+              <li data-i18n="impact.locate.l3">No more radio calls to find equipment</li>
+            </ul>
+          </article>
+
+          <!-- OPTIMIZE -->
+          <article class="impact-card impact-optimize">
+            <div class="impact-img-wrap">
+              <img src="assets/img/icon_optimize_truck.png" alt="Ultra-class haul truck and shovel" class="impact-img" />
+              <div class="impact-img-overlay optimize"></div>
+            </div>
+            <h3 data-i18n="impact.optimize.h">Turn idle time into productive hours</h3>
+            <p class="impact-stat" data-i18n="impact.optimize.stat">Up to 20% improvement in asset utilization</p>
+            <ul>
+              <li data-i18n="impact.optimize.l1">Usage &amp; downtime telemetry per asset</li>
+              <li data-i18n="impact.optimize.l2">Shift performance dashboards</li>
+              <li data-i18n="impact.optimize.l3">Data-driven maintenance planning</li>
+            </ul>
+          </article>
+
+          <!-- PROTECT -->
+          <article class="impact-card impact-protect">
+            <div class="impact-img-wrap">
+              <img src="assets/img/icon_protect_worker.png" alt="Mining worker with helmet" class="impact-img" />
+              <div class="impact-img-overlay protect"></div>
+            </div>
+            <h3 data-i18n="impact.protect.h">Keep people &amp; assets out of harm's way</h3>
+            <p class="impact-stat" data-i18n="impact.protect.stat">Real-time event response in seconds</p>
+            <ul>
+              <li data-i18n="impact.protect.l1">Restricted-area breach alerts</li>
+              <li data-i18n="impact.protect.l2">Emergency notification workflows</li>
+              <li data-i18n="impact.protect.l3">Full perimeter event log</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+      <div class="slide-index">02</div>
+    </section>
+
+    <!-- ══════════════ SLIDE 3 — The Pain ══════════════ -->
+    <section class="slide" id="slide-3">
+      <div class="content">
+        <p class="eyebrow" data-i18n="pain.eyebrow">Savings command panel</p>
+        <h2 data-i18n="pain.title">Locate. Optimize. Protect. Turn operational blind spots into measurable savings.</h2>
+        <p class="lead small" data-i18n="pain.lead">This dashboard highlights where value leaks today and where MinePulse can recover productivity, cost, and safety performance.</p>
+
+        <div class="pain-dashboard">
+          <section class="pain-savings-panel" aria-label="Savings gauge panel">
+            <div class="savings-gauge-wrap">
+              <p class="gauge-kicker" data-i18n="pain.gauge.kicker">Estimated Year-1 savings opportunity</p>
+              <div class="savings-gauge-grid">
+                <article class="gauge-tile">
+                  <h3 data-i18n="pain.gauge.locate.h">Locate</h3>
+                  <div class="savings-gauge gauge-locate" data-gauge-target="20">
+                    <div class="gauge-center">
+                      <span class="gauge-value" data-gauge-value>0%</span>
+                      <span class="gauge-caption" data-i18n="pain.gauge.locate.c">CAPEX containment</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="gauge-tile">
+                  <h3 data-i18n="pain.gauge.optimize.h">Optimize</h3>
+                  <div class="savings-gauge gauge-optimize" data-gauge-target="40">
+                    <div class="gauge-center">
+                      <span class="gauge-value" data-gauge-value>0%</span>
+                      <span class="gauge-caption" data-i18n="pain.gauge.optimize.c">Productivity per cost/ton</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="gauge-tile">
+                  <h3 data-i18n="pain.gauge.protect.h">Protect</h3>
+                  <div class="savings-gauge gauge-protect" data-gauge-target="25">
+                    <div class="gauge-center">
+                      <span class="gauge-value" data-gauge-value>0%</span>
+                      <span class="gauge-caption" data-i18n="pain.gauge.protect.c">Risk &amp; incident metrics</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <div class="pain-grid pain-grid-dash">
+            <article class="pain-card pain-locate">
+              <div class="pain-icon">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="11" stroke="#7cc5ff" stroke-width="2"/>
+                  <line x1="28.5" y1="28.5" x2="38" y2="38" stroke="#7cc5ff" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="15" y1="20" x2="25" y2="20" stroke="#7cc5ff" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="20" y1="15" x2="20" y2="25" stroke="#7cc5ff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="pain-stat" data-i18n="pain.locate.stat">2-3 hrs/shift</div>
+              <h3 data-i18n="pain.locate.h">Locate: Stop losing value in missing assets</h3>
+              <ul class="pain-list">
+                <li data-i18n="pain.locate.l1">Eliminate search losses from untracked or misplaced equipment.</li>
+                <li data-i18n="pain.locate.l2">Flag assets drifting out of maintenance control before premature failure.</li>
+                <li data-i18n="pain.locate.l3">Close the gap between book assets and physically verifiable mine assets.</li>
+              </ul>
+              <span class="pain-solve" data-i18n="pain.locate.solve">→ MinePulse Locate control layer</span>
+            </article>
+
+            <article class="pain-card pain-optimize">
+              <div class="pain-icon">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="14" stroke="#4de8b8" stroke-width="2"/>
+                  <polyline points="22,10 22,22 30,27" stroke="#4de8b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="pain-stat" data-i18n="pain.optimize.stat">10-20% uplift</div>
+              <h3 data-i18n="pain.optimize.h">Optimize: Recover hidden productivity across shifts</h3>
+              <ul class="pain-list">
+                <li data-i18n="pain.optimize.l1">Measure operator-driven productivity variance by shift and unit.</li>
+                <li data-i18n="pain.optimize.l2">Track payload, speed, and cycle performance against operating targets.</li>
+                <li data-i18n="pain.optimize.l3">Monitor fuel consumption, alarms, and condition trends for proactive action.</li>
+              </ul>
+              <span class="pain-solve" data-i18n="pain.optimize.solve">→ MinePulse Optimize intelligence</span>
+            </article>
+
+            <article class="pain-card pain-protect">
+              <div class="pain-icon">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 6 L38 34 H6 Z" stroke="#ffd166" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                  <line x1="22" y1="17" x2="22" y2="26" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="22" cy="30" r="1.8" fill="#ffd166"/>
+                </svg>
+              </div>
+              <div class="pain-stat" data-i18n="pain.protect.stat">Faster response</div>
+              <h3 data-i18n="pain.protect.h">Protect: Reduce incident exposure in high-risk zones</h3>
+              <ul class="pain-list">
+                <li data-i18n="pain.protect.l1">Prevent unauthorized entry into restricted or high-altitude work areas.</li>
+                <li data-i18n="pain.protect.l2">Alert teams instantly during risky activities and trigger response workflows.</li>
+                <li data-i18n="pain.protect.l3">Maintain full traceability for personnel, contractors, and visitors on site.</li>
+              </ul>
+              <span class="pain-solve" data-i18n="pain.protect.solve">→ MinePulse Protect safety layer</span>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="slide-index">03</div>
+    </section>
+
+    <!-- ══════════════ SLIDE 4 — How it works ══════════════ -->
+    <section class="slide" id="slide-4">
+      <div class="content">
+        <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+        <h2 data-i18n="how.title">From field events to operational decisions in seconds</h2>
+        <div class="how-flow">
+
+          <div class="how-layer how-field">
+            <div class="how-img-wrap">
+              <img src="assets/img/how_field_gemini_iot.png" alt="Field IoT trackers in a mining operation" class="how-img" />
+              <div class="how-img-overlay how-img-overlay-field"></div>
+            </div>
+            <div class="how-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="7" stroke="#7cc5ff" stroke-width="1.8"/>
+                <path d="M20 23 C20 23 10 30 10 36 H30 C30 30 20 23 20 23Z" stroke="#7cc5ff" stroke-width="1.8" fill="rgba(124,197,255,0.08)"/>
+                <circle cx="20" cy="16" r="2.5" fill="#7cc5ff"/>
+              </svg>
+            </div>
+            <h3 data-i18n="how.l1.h">Field Layer</h3>
+            <p data-i18n="how.l1.p">Rugged trackers and sensors on assets, vehicles, and personnel. IP67-rated. Long battery life. No site wiring needed.</p>
+            <ul>
+              <li data-i18n="how.l1.i1">Asset trackers</li>
+              <li data-i18n="how.l1.i2">Worker safety tags</li>
+              <li data-i18n="how.l1.i3">Zone sensors</li>
+            </ul>
+          </div>
+
+          <div class="how-arrow">→</div>
+
+          <div class="how-layer how-network">
+            <div class="how-img-wrap">
+              <img src="assets/img/how_network_gemini_gateway_enhanced.png" alt="Mining IoT network gateway over open pit" class="how-img" />
+              <div class="how-img-overlay how-img-overlay-network"></div>
+            </div>
+            <div class="how-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 36 L20 20" stroke="#d8b26a" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 26 Q20 20 26 26" stroke="#d8b26a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <path d="M9 21 Q20 13 31 21" stroke="#d8b26a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <path d="M5 16 Q20 6 35 16" stroke="#d8b26a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <circle cx="20" cy="36" r="2" fill="#d8b26a"/>
+              </svg>
+            </div>
+            <h3 data-i18n="how.l2.h">Network Layer</h3>
+            <p data-i18n="how.l2.p">TEKTELIC carrier-grade LoRaWAN gateways provide seamless coverage across pit, plant, and logistics zones.</p>
+            <ul>
+              <li data-i18n="how.l2.i1">Multi-km outdoor coverage</li>
+              <li data-i18n="how.l2.i2">Indoor &amp; underground capable</li>
+              <li data-i18n="how.l2.i3">Redundant gateway design</li>
+            </ul>
+          </div>
+
+          <div class="how-arrow">→</div>
+
+          <div class="how-layer how-intelligence">
+            <div class="how-img-wrap">
+              <img src="assets/img/how_intelligence_gemini_dashboard.png" alt="Operations intelligence dashboard wall" class="how-img" />
+              <div class="how-img-overlay how-img-overlay-intelligence"></div>
+            </div>
+            <div class="how-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="32" height="22" rx="3" stroke="#4de8b8" stroke-width="1.8"/>
+                <line x1="4" y1="32" x2="36" y2="32" stroke="#4de8b8" stroke-width="1.5" opacity="0.4"/>
+                <line x1="14" y1="32" x2="11" y2="37" stroke="#4de8b8" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <line x1="26" y1="32" x2="29" y2="37" stroke="#4de8b8" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <rect x="9" y="19" width="5" height="6" rx="1" fill="#4de8b8" opacity="0.6"/>
+                <rect x="17" y="14" width="5" height="11" rx="1" fill="#4de8b8" opacity="0.8"/>
+                <rect x="25" y="11" width="5" height="14" rx="1" fill="#4de8b8"/>
+              </svg>
+            </div>
+            <h3 data-i18n="how.l3.h">Intelligence Layer</h3>
+            <p data-i18n="how.l3.p">MinePulse transforms raw signals into live maps, utilization dashboards, alert workflows, and KPI reports for every level of your operation.</p>
+            <ul>
+              <li data-i18n="how.l3.i1">Live operations map</li>
+              <li data-i18n="how.l3.i2">Shift performance reports</li>
+              <li data-i18n="how.l3.i3">Executive KPI view</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="slide-index">04</div>
+    </section>
+
+    <!-- ══════════════ SLIDE 5 — See it in action ══════════════ -->
+    <section class="slide" id="slide-5">
+      <div class="content">
+        <p class="eyebrow" data-i18n="demo.eyebrow">Live operational view</p>
+        <h2 data-i18n="demo.title">Your mine. Real time. One screen.</h2>
+        <div class="demo-wrap">
+          <div class="visual-panel demo-visual demo-sim">
+            <div class="mine-sim-view">
+              <div class="mine-sim-label" data-i18n="demo.overlay.label">To be replaced with live TEKTELIC mock dashboard</div>
+              <img src="assets/img/demo_mine_workshop_realtime_bg_v2.png" alt="Realtime mine pit with haul roads, workshop, and office view" class="mine-sim-bg" />
+              <div class="mine-sim-hud"></div>
+
+              <div class="rt-marker rt-equip rt-equip-edge-1" aria-label="Static auxiliary equipment at pit edge with utilization">
+                <img src="assets/img/demo_icon_small_equipment.png" alt="Small equipment icon" />
+                <span class="rt-util">41%</span>
+              </div>
+              <div class="rt-marker rt-equip rt-equip-edge-2" aria-label="Static auxiliary equipment at pit edge with utilization">
+                <img src="assets/img/demo_icon_small_equipment.png" alt="Small equipment icon" />
+                <span class="rt-util">37%</span>
+              </div>
+
+              <div class="rt-marker rt-fleet rt-fleet-1 rt-road-a" aria-label="Fleet tracking marker on haul road"><img src="assets/img/demo_icon_fleet_truck.png" alt="Fleet truck icon" /></div>
+              <div class="rt-marker rt-fleet rt-fleet-2 rt-road-a" aria-label="Fleet tracking marker on haul road"><img src="assets/img/demo_icon_fleet_truck.png" alt="Fleet truck icon" /></div>
+              <div class="rt-marker rt-fleet rt-fleet-3 rt-road-b" aria-label="Fleet tracking marker on haul road"><img src="assets/img/demo_icon_fleet_truck.png" alt="Fleet truck icon" /></div>
+              <div class="rt-marker rt-fleet rt-fleet-4 rt-road-c" aria-label="Fleet tracking marker on haul road"><img src="assets/img/demo_icon_fleet_truck.png" alt="Fleet truck icon" /></div>
+              <div class="rt-marker rt-fleet rt-fleet-5 rt-road-d" aria-label="Fleet tracking marker on haul road"><img src="assets/img/demo_icon_fleet_truck.png" alt="Fleet truck icon" /></div>
+
+              <div class="rt-marker rt-worker rt-worker-1" aria-label="Worker safety tracking marker near office">
+                <img src="assets/img/demo_icon_worker_hardhat.png" alt="Worker hard hat icon" />
+              </div>
+              <div class="rt-marker rt-worker rt-worker-2" aria-label="Worker safety tracking marker near workshop">
+                <img src="assets/img/demo_icon_worker_hardhat.png" alt="Worker hard hat icon" />
+              </div>
+              <div class="rt-marker rt-worker rt-worker-3" aria-label="Worker safety tracking marker near workshop"><img src="assets/img/demo_icon_worker_hardhat.png" alt="Worker hard hat icon" /></div>
+              <div class="rt-marker rt-worker rt-worker-4" aria-label="Worker safety tracking marker near office"><img src="assets/img/demo_icon_worker_hardhat.png" alt="Worker hard hat icon" /></div>
+              <div class="rt-marker rt-worker rt-worker-5" aria-label="Worker safety tracking marker near workshop"><img src="assets/img/demo_icon_worker_hardhat.png" alt="Worker hard hat icon" /></div>
+            </div>
+          </div>
+          <div class="demo-callouts">
+            <div class="callout callout-locate">
+              <span class="callout-dot"></span>
+              <div>
+                <strong data-i18n="demo.c1.h">Live asset map</strong>
+                <p data-i18n="demo.c1.p">Every tracked asset visible in real time — location, status, and zone assignment at a glance.</p>
+              </div>
+            </div>
+            <div class="callout callout-optimize">
+              <span class="callout-dot"></span>
+              <div>
+                <strong data-i18n="demo.c2.h">Utilization dashboard</strong>
+                <p data-i18n="demo.c2.p">Shift-by-shift usage telemetry. Spot idle assets and inefficiencies before the next day begins.</p>
+              </div>
+            </div>
+            <div class="callout callout-protect">
+              <span class="callout-dot"></span>
+              <div>
+                <strong data-i18n="demo.c3.h">Alert &amp; event center</strong>
+                <p data-i18n="demo.c3.p">Zone breaches, proximity events, and emergency workflows — all surfaced in one live feed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-index">05</div>
+    </section>
+
+    <!-- ══════════════ SLIDE 6 — 90-day pilot ══════════════ -->
+    <section class="slide" id="slide-6">
+      <div class="content">
+        <p class="eyebrow" data-i18n="pilot.eyebrow">Pilot-in-a-Box</p>
+        <h2 data-i18n="pilot.title">90 days to your first operational insight</h2>
+        <div class="pilot-phases">
+          <div class="pilot-phase">
+            <span class="pilot-num">01</span>
+            <span class="t-month" data-i18n="pilot.m1">Day 1–30</span>
+            <h3 data-i18n="pilot.h1">Validate</h3>
+            <p data-i18n="pilot.p1">Site mapping, gateway placement, first tracker setup, and baseline KPI capture. Zero disruption to operations.</p>
+            <span class="pilot-deliverable" data-i18n="pilot.d1">KPI baseline established</span>
+          </div>
+          <div class="pilot-phase">
+            <span class="pilot-num">02</span>
+            <span class="t-month" data-i18n="pilot.m2">Day 31–60</span>
+            <h3 data-i18n="pilot.h2">Quantify</h3>
+            <p data-i18n="pilot.p2">Expose first savings opportunities with utilization and movement intelligence. Data-backed decisions start here.</p>
+            <span class="pilot-deliverable" data-i18n="pilot.d2">First savings report ready</span>
+          </div>
+          <div class="pilot-phase">
+            <span class="pilot-num">03</span>
+            <span class="t-month" data-i18n="pilot.m3">Day 61–90</span>
+            <h3 data-i18n="pilot.h3">Scale</h3>
+            <p data-i18n="pilot.p3">Expand tags, automate alerts, and lock monthly operational review cadence. Build the business case for full deployment.</p>
+            <span class="pilot-deliverable" data-i18n="pilot.d3">Expansion plan delivered</span>
+          </div>
+        </div>
+        <div class="counter-strip">
+          <div><span class="num" data-target="90">0</span><span class="label" data-i18n="pilot.c1">Days to first full-cycle outcome</span></div>
+          <div><span class="num" data-target="3">0</span><span class="label" data-i18n="pilot.c2">Core value streams</span></div>
+          <div><span class="num" data-target="1">0</span><span class="label" data-i18n="pilot.c3">Unified operating view</span></div>
+        </div>
+      </div>
+      <div class="slide-index">06</div>
+    </section>
+
+    <!-- ══════════════ SLIDE 7 — Why GoalPraxis + CTA ══════════════ -->
+    <section class="slide" id="slide-7">
+      <div class="content">
+        <div class="cta-slide-grid">
+          <div class="cta-left">
+            <p class="eyebrow" data-i18n="cta.eyebrow">Why GoalPraxis</p>
+            <h2 data-i18n="cta.title">Mining experience. Technology backbone. Partnership commitment.</h2>
+            <p class="lead small" data-i18n="cta.lead">We don't just deploy hardware. We become the operational intelligence partner that helps your team extract measurable value — pilot to portfolio.</p>
+            <div class="cta-opportunity-band">
+              <span class="op-chip op-chip-locate" data-i18n="cta.op1">Recover hidden asset value</span>
+              <span class="op-chip op-chip-optimize" data-i18n="cta.op2">Convert idle hours into output</span>
+              <span class="op-chip op-chip-protect" data-i18n="cta.op3">Turn safety control into trust</span>
+            </div>
+            <div class="differentiators">
+              <div class="diff-item"><span class="diff-check">✓</span><p data-i18n="cta.d1">Global IoT technology depth + local mining execution capability</p></div>
+              <div class="diff-item"><span class="diff-check">✓</span><p data-i18n="cta.d2">Practical rollout aligned to operational reality — not enterprise complexity</p></div>
+              <div class="diff-item"><span class="diff-check">✓</span><p data-i18n="cta.d3">Fast start via focused pilot, clear path to regional scaling</p></div>
+              <div class="diff-item"><span class="diff-check">✓</span><p data-i18n="cta.d4">One narrative from field events to management decisions</p></div>
+            </div>
+          </div>
+          <div class="cta-card">
+            <div class="cta-card-glow"></div>
+            <p class="cta-card-tag" data-i18n="cta.card.tag">Strategic opportunity</p>
+            <img class="logo-box" src="assets/img/gp_logo_box.png" alt="GoalPraxis logo" />
+            <h3 data-i18n="cta.card.h">Launch the first MinePulse pilot</h3>
+            <p class="subtle" data-i18n="cta.card.p">Ready to start in Peru with a strategic pilot and scale across regional mining operations.</p>
+            <div class="cta-value-points">
+              <div class="cta-mini-metric"><strong data-i18n="cta.m1n">90 days</strong><span data-i18n="cta.m1l">to first operational proof</span></div>
+              <div class="cta-mini-metric"><strong data-i18n="cta.m2n">1 pilot</strong><span data-i18n="cta.m2l">to open regional expansion</span></div>
+            </div>
+            <div class="cta-actions cta-actions-left">
+              <a class="btn" href="https://wa.me/?text=Hello%20GoalPraxis%2C%20I%20want%20to%20discuss%20a%20MinePulse%20pilot." target="_blank" rel="noopener" data-i18n="cta.btn1">Contact via WhatsApp</a>
+            </div>
+            <p class="subtle cta-footnote" data-i18n="cta.footnote">Powered by TEKTELIC · Built for LATAM mining</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-index">07</div>
+    </section>
+  </main>
+
+  <footer class="deck-footer">
+    <span data-i18n="footer.left">Keyboard: left/right arrows</span>
+    <span data-i18n="footer.right">GoalPraxis FirstPresetantion V2</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
